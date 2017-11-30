@@ -1,4 +1,15 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import React, { Component } from 'react';
+import MyStackNavigation from "./src/navigation/MyStackNavigation";
 
-AppRegistry.registerComponent('BrainfuckTool', () => App);
+
+export default class BrainfuckTool extends Component {
+    render() {
+        return (
+                    <MyStackNavigation />
+        );
+    }
+}
+
+
+AppRegistry.registerComponent('BrainfuckTool', () => BrainfuckTool);

@@ -101,8 +101,8 @@ class Interpreter{
 
 }
 
-//export default Interpreter;
+export default Interpreter;
 
-let code = '++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.';
-let i = new Interpreter(code,[]);
-console.log(i.toString());
+// let code = '++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.';
+// let i = new Interpreter(code,[]);
+// console.log(i.toString());
