@@ -10,7 +10,7 @@ class Interpreter{
         this.code = code.trim().replace(/ /g, "").replace(/(\r\n|\n|\r)/gm,"").split("");
         this.input = input || [];
         this.pointer = 0;
-        this.bracketp = 0 ;
+        this.codePointer = 0 ;
         this.dataset = [];
         this.bracketStack = [];
         this.output = [];
@@ -70,12 +70,12 @@ class Interpreter{
     leftBracket(){
         let openBrackets = 1;
         if (this.dataset[this.pointer]) {
-            this.bracketStack.push(this.bracketp);
+            this.bracketStack.push(this.codePointer);
         } else {
-            while (openBrackets && this.code[++this.bracketp]) {
-                if (this.code[this.bracketp] === ']') {
+            while (openBrackets && this.code[++this.codePointer]) {
+                if (this.code[this.codePointer] === ']') {
                     openBrackets--;
-                } else if (this.code[this.bracketp] === '[') {
+                } else if (this.code[this.codePointer] === '[') {
                     openBrackets++;
                 }
             }
@@ -83,15 +83,15 @@ class Interpreter{
     }
 
     rightBracket(){
-        this.bracketp =  this.bracketStack.pop() - 1;
+        this.codePointer =  this.bracketStack.pop() - 1;
     }
 
     run(){
         let list = ['+','-','<','>','.',',','[',']'];
         do{
-           let c = this.code[this.bracketp];
-           this.operation(c);
-        }while(++this.bracketp < this.code.length);
+           let c = this.code[this.codePointer];
+           if(list.indexOf(c) >= 0)  this.operation(c);
+        }while(++this.codePointer < this.code.length);
         return this.output;
     }
 
@@ -103,6 +103,3 @@ class Interpreter{
 
 export default Interpreter;
 
-// let code = '++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.';
-// let i = new Interpreter(code,[]);
-// console.log(i.toString());
