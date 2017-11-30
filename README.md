@@ -25,7 +25,7 @@ The eight language commands each consist of a single character:
 
 ## Examples
 
-### Hello World![[edit](https://en.wikipedia.org/w/index.php?title=Brainfuck&action=edit&section=7)]
+### Hello World!
 
 The following program prints ["Hello World!"](https://en.wikipedia.org/wiki/Hello_world_program) and a newline to the screen:
 
