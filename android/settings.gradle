@@ -1,0 +1,3 @@
+rootProject.name = 'BrainfuckTool'
+
+include ':app'
