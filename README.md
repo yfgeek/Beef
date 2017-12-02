@@ -1,4 +1,4 @@
-# 🍗 Beef - a brainfuck interpreter
+# 🐂 Beef - a brainfuck interpreter
 
 This is a brainfuck interpreter based on React Native for **iOS & android**. [中文页面](README-CN.md)
 
