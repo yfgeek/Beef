@@ -4,6 +4,13 @@ This is a brainfuck interpreter based on React Native for **iOS & android**. [ä¸
 
 More features are going to be designed and implemented.
 
+
+
+# Snapshot
+
+<img src="img/1.png" width="350px" />
+
+
 # The brainfuck language
 
 Brainfuck is an esoteric programming language created in 1993 by Urban MÃ¼ller, and notable for its extreme minimalism.
@@ -62,6 +69,3 @@ The following program prints ["Hello World!"](https://en.wikipedia.org/wiki/Hell
 
 Reference: [Wikipedia](https://en.wikipedia.org/wiki/Brainfuck)
 
-# Snapshot
-
-<img src="img/1.png" width="350px" />
