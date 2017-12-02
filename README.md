@@ -64,4 +64,4 @@ Reference: [Wikipedia](https://en.wikipedia.org/wiki/Brainfuck)
 
 # Snapshot
 
-![](img/1.png)
+<img src="img/1.png" width="350px" />
