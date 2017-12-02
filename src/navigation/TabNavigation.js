@@ -8,7 +8,7 @@ const RouteConfigs = {
     MainController: {
         screen: MainController,
         navigationOptions: {
-            tabBarLabel: '主页',
+            tabBarLabel: 'Lab',
             tabBarIcon: ({ tintColor, focused }) => (
                 <Ionicons
                     name={focused ? 'ios-home' : 'ios-home-outline'}
@@ -21,7 +21,7 @@ const RouteConfigs = {
     SettingController: {
         screen: SettingController,
         navigationOptions: {
-            tabBarLabel: '设置',
+            tabBarLabel: 'Settings',
             tabBarIcon: ({ tintColor, focused }) => (
                 <Ionicons
                     name={focused ? 'ios-settings' : 'ios-settings-outline'}

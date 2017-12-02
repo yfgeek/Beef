@@ -34,7 +34,7 @@ class SettingController extends Component {
 
     __rednerTitle() {
         if (Platform.OS === 'ios') {
-            return <HeaderTitle title="设置" indent={10}/>;
+            return <HeaderTitle title="Settings" indent={0.1}/>;
         }
         return <View/>;
     }

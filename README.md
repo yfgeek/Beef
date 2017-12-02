@@ -61,3 +61,7 @@ The following program prints ["Hello World!"](https://en.wikipedia.org/wiki/Hell
 ```
 
 Reference: [Wikipedia](https://en.wikipedia.org/wiki/Brainfuck)
+
+# Snapshot
+
+![](img/1.png)
